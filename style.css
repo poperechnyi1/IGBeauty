@@ -1,0 +1,1668 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------*/
+
+
+/*body{
+  overflow-x:hidden;
+}*/
+
+
+
+
+
+@font-face {
+    font-family:"Khula";
+    src: url("font/Khula-Regular.ttf");
+}
+
+@font-face {
+    font-family:"Khula-Semibold";
+    src: url("font/Khula-SemiBold.ttf");
+}
+
+@font-face {
+    font-family:"Khula-Bold";
+    src: url("font/Khula-Bold.ttf");
+}
+
+@font-face {
+    font-family:"Khula-ExtraBold";
+    src: url("font/Khula-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family:"Ubuntu-Regular";
+    src: url("font/Ubuntu-Regular.ttf");
+}
+
+.container-max{
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: 1199px){
+    .container-max{
+        max-width:940px;
+    }
+}
+
+@media screen and (max-width:1024px)
+{
+    .container-max{
+        max-width:720px;
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .container-max{
+        max-width:720px;
+    }
+}
+
+
+@media screen and (max-width: 732px){
+.container-max {
+    max-width: 654px;
+}
+}
+
+@media screen and (max-width: 412px){
+.container-max {
+    max-width: 380px;
+}
+}
+
+/*--------------------navigation bar-------------------------------------*/
+.navbar-default{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background: #ffffff !important;
+    border:none !important;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 10%, rgba(255, 255, 255, 0.90) 20%, rgba(255, 255, 255, 0.80) 40%, rgba(255, 255, 255, 0.60) 60%) !important;
+}
+
+
+
+  .nav-left, .navigation-main{
+      display: inline-block;
+  }
+
+.nav-left{
+      margin-right: 35px;
+  }
+
+  .navigation-main{
+      margin-left:35px;
+  }
+
+  .call-number{
+      margin: 0;
+     text-align: right;
+      font:23px "Khula", sans-serif;
+      color: #0dc4c6;
+  }
+
+  .nav-menu{
+      padding:0;
+  }
+
+  .nav-menu li{
+      display: inline-block;
+      list-style: none;
+      margin: 0 12px;
+      height: 25px;
+  }
+
+
+  .nav-menu li:first-child{
+      margin-left: 0;
+  }
+
+  .nav-menu li:last-child{
+      margin-right:0;
+  }
+
+.nav-menu li:hover{
+    border-bottom: 2px solid #0dc4c6;
+}
+
+  .nav-menu li a{
+      display: block;
+      font:18px "Khula", sans-serif;
+      color: #000000;
+      height: 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+
+
+#dropdown{
+  display: none;
+}
+
+
+/*------------------------------------------*/
+
+#wrapper{
+    width: 100%;
+}
+
+@media screen and (max-width:1199px){
+    
+    .without-padding{
+       padding: 0; 
+    }
+.nav-left {
+    margin-right: 5px;    
+}
+
+    .nav-left img{
+        width:130px;
+        height: auto;
+    }
+    
+    .navigation-main {
+    margin-left: 0px;
+}
+    
+    .nav-menu{
+        width: 580px;
+    }
+    
+    .nav-menu li {   
+    margin: 0 5px;    
+}
+    .nav-menu li a{
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width:991px){
+      .nav-left img{
+        width:125px;
+        height: auto;
+    }
+    
+    .nav-menu li a {
+    font: 14px "Khula", sans-serif;
+    color: #000000;   
+}
+}
+
+@media screen and (max-width:769px){
+    .navbar{
+        display: none;
+    }
+    
+    #dropdown{
+        display: block;
+        position: fixed !important;
+    z-index: 20;
+    right: 50px;
+    top: 30px;
+    }
+    
+    #dLabel {
+    background-image: url("img/icon-dropdown.png");
+    background-size: contain;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+}
+    
+   
+    .dropdown-menu li{
+        background-color: #f5f5f5;
+        padding-left: 20px;
+    }
+  
+    
+    .dropdown-menu li a {
+    display: block;
+    padding: 10px 100px 10px 5px !important;
+    font: 42px "Khula", sans-serif;
+    color: #0dc4c6 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+    .close img {
+    width: 32px;
+}    
+  
+}
+
+
+
+
+/*-------FIRST SLIDE-----------*/
+#first-slide{
+    background: url("img/doctors.png") right top no-repeat ;
+    background-size: 100% auto;
+  }  
+      
+
+
+.advertising{
+  margin: 220px 0 180px 0;}
+
+.text-advertising{
+    font:60px "Khula", sans-serif;
+    line-height: 75px;
+    margin-bottom:40px;
+}
+
+.request{
+    font:23px "Khula-Semibold", sans-serif;
+    color: #0dc4c6;
+    text-decoration:underline;
+}
+/*-----------------------------------*/
+
+@media screen and (min-width: 1600px){
+    .advertising{
+  margin: 410px 0 280px 0;}
+}
+
+@media screen and (max-width: 1199px){
+    .advertising{
+   margin: 180px 0 140px 0;}
+    
+    .text-advertising {    
+        line-height: 65px;
+    }
+}
+
+@media screen and (max-width:1024px){
+   .advertising{
+   margin: 180px 0 40px 0;}
+    
+   
+}
+    
+}
+
+@media screen and (max-width:991px){
+   .advertising{       
+   margin: 180px 0 30px 0;} 
+   
+}
+
+@media screen and (max-width:768px){
+    .advertising {
+    margin: 115px 0 30px 0;
+}    
+   
+}
+
+@media screen and (max-width:732px){
+    .dropdown-menu li a {
+    display: block;
+    padding: 0px 100px 0px 5px !important;
+    font: 18px "Khula", sans-serif;
+    color: #0dc4c6 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+    
+    .close img {
+    width: 22px;
+}
+    
+    .dropdown-menu-right {
+    right: 50px !important;
+    
+}
+    
+    .advertising {
+    margin: 65px 0 40px 0;
+
+}     
+}
+
+@media screen and (max-width:412px){
+    .text-advertising {
+    line-height: 45px;
+        text-align: center;
+}
+    
+    .request {
+    font-size: 18px;
+    }
+    
+    #first-slide {    
+    background-size: 710px;
+}
+}
+
+
+
+
+/*--------FIRST CARUSEL----------*/
+#first-carusel{
+    margin:20px auto;
+    width: 85%;
+     
+
+}
+
+
+.referens{
+    position: absolute;
+    bottom: 0;
+    padding:20px 0 10px 0;
+    width:310px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    font:21px "Khula-Bold", sans-serif;
+    background: rgba(13, 196, 198, 0.90);
+    line-height: 21px;
+    color:#ffffff;
+
+}
+
+.special-referens{
+    padding:10px 0 10px 0;
+}
+
+.slick-prev, .slick-next{
+    height: 65px;
+    width:38px;
+}
+
+.slick-prev{
+    left: -65px;
+}
+
+.slick-next {
+    right: -55px;
+}
+/*--------------------------------------------*/
+
+@media screen and (max-width:1025px){
+    .slick-slide img, .referens{
+        width:310px;
+    }        
+    
+     .carusel-body {
+        width: 720px;
+    
+}
+    .slick-slide img, .referens {
+    margin: 0 35px;
+}   
+}
+
+@media screen and (max-width:991px){
+    
+.slick-slide img, .referens {
+    margin: 0 35px;
+}   
+}
+
+@media screen and (max-width:768px)
+{
+     .carusel-body {
+    width: 660px;
+}
+    .slick-slide img, .referens {
+    margin: 0 10px;
+}  
+    
+    .slick-prev {
+    left: -45px;
+}
+}
+
+@media screen and (max-width:732px){
+    .carusel-body {
+    width: 570px;
+}
+    
+      .slick-slide img, .referens {
+          width: 270px;
+    margin: 0 10px;
+}  
+    
+}
+
+@media screen and (max-width:413px){
+    .carusel-body{
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+    .slick-slide img, .referens {
+          width: 250px;
+    margin: 0;
+}  
+    
+    .referens{
+        font-size: 14px;
+    }
+    
+}
+
+
+
+/*---------Welcome to IGBeauty Studio------------*/
+#describe{
+  margin-bottom: 35px;
+}
+
+.studio{
+  font:50px "Khula",sans-serif;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.top-text{
+ /* padding: 0 15px 0 15px !important;*/
+
+}
+
+.central-text{
+  margin: 30px 0 ;
+  padding-right: 67px;
+}
+
+.bottom-text{
+  margin-bottom: 40px;
+ padding-right: 67px;
+}
+
+.describe-text{
+  font:17px "Khula", sans-serif;
+  text-align: center;
+}
+
+.about-us{     
+    margin: 0 auto;
+  font:24px "Khula-Semibold", sans-serif;
+  text-decoration: underline;
+  color: #0dc4c6;
+}
+/*-----------------------*/
+
+
+@media screen and (max-width:732px){
+    .about-us {    
+    font: 18px "Khula-Semibold", sans-serif;    
+}
+}
+
+@media screen and (max-width:412px){
+    .central-text {
+   
+    padding-right: 0px;
+}
+    
+    .bottom-text {    
+    padding-right: 0px;
+}
+    .about-us {
+        position: relative;
+        left: -15px;
+        display: block;
+        text-align: center;
+    
+}
+}
+
+
+
+
+/*-------------Book now---------------*/
+#book-now{
+  background: url("img/background-boock-now.png");
+}
+
+.appointment-content{
+  padding-left: 77px;
+  font-family: "Khula", sans-serif;
+  margin-bottom: 70px;
+}
+
+.appointment{
+  margin: 55px 0 15px 0;
+  font-size: 50px;
+  color:#0dc4c6;
+}
+
+.appointment-content p{
+  font-size: 23px;
+  line-height: 31px;
+}
+
+.blue-text{
+  color:#0dc4c6;
+}
+
+.button-book-now{
+  margin-top: 90px;
+  margin-left:20px;
+  margin-right: 10px;
+  background: #0dc4c6;
+  font:bold 33px "Khula-Bold", sans-serif;
+  color:#ffffff;
+  padding: 30px 75px;
+  line-height: 30px;
+  position: relative;
+  top:50%;
+  border: none;
+}
+/*-----------------------------*/
+@media screen and (max-width: 1199px){
+  .appointment-content {
+    padding-left: 0px;   
+}
+  .appointment-content p {
+        font-size: 20px;
+}
+    
+    .button-book-now {   
+    margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 1024px){
+    .appointment {
+    margin: 55px 0 15px 0;
+    font-size: 35px;   
+}
+    
+    .appointment-content p {
+    font-size: 18px;
+}
+    .button-book-now{
+        margin-top: 120px;
+        font-size: 32px;
+    padding: 20px 40px;
+    }    
+   
+}
+}
+
+@media screen and (max-width:991px){
+    .appointment{  
+  font-size: 40px;  
+}
+    
+    .appointment-content p {
+    font-size: 18px;
+}
+    
+    .button-book-now {   
+   margin-top: 120px;
+    font-size: 28px;
+    padding: 20px 40px;
+}
+}
+
+
+@media screen and (max-width:768px){
+    .button-book-now {   
+    padding: 20px 20px;
+}
+}
+
+@media screen and (max-width:732px){
+    .button-book-now {
+        margin:0 0 20px 200px;
+  
+    font-size: 32px;
+    padding: 20px 40px;
+}
+}
+
+@media screen and (max-width:412px){
+    .button-book-now {        
+    margin: 0 0 20px 70px;
+    font-size: 32px;
+    padding: 20px 40px;
+}
+    
+    .appointment {
+    text-align: center;
+}
+}
+
+
+
+
+/*--------services----------------*/
+.service-header{
+  font:50px "Khula", sans-serif;
+  margin:45px 0 35px 0;
+  text-align: center;
+}
+
+.our-services-1, .our-services-2, .our-services-3{
+  display: none;
+}
+
+.our-services{
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+
+.our-services li{
+  display: inline-block;
+  border: 1px solid #ababab;
+  margin:0 3px;
+}
+
+.our-services li:first-child{
+  margin-left:0;
+}
+
+.our-services li:last-child{
+  margin-right:0;
+}
+
+.our-services li:hover{
+  border-color:#0dc4c6;
+}
+
+.our-services li a{
+  display: block;
+  text-decoration: none;
+  font:14px "Khula", sans-serif;
+  padding:8px 11px 5px 11px;
+  color:#ababab;
+}
+
+.our-services li a:hover{
+  color:#0dc4c6;
+}
+
+.our-services-content-mobile {
+    display: none;
+}
+
+.servise-text-content{
+  padding: 0 10px 0 45px;
+}
+
+.header-laser{
+  font:30px "Khula-Bold", sans-serif;
+  color:#0dc4c6;
+  line-height: 30px;
+  margin: 0 0 25px 0;
+}
+
+.text-laser{
+  font:17px "Khula",sans-serif;
+}
+
+.service-bottom{
+  margin-bottom: 65px;
+}
+
+.header-products-position{
+  height: 50px;
+  margin-bottom:20px;
+
+}
+/*--------------------------------------*/
+@media screen and (max-width:1199px){
+    .our-services li{
+        margin-bottom: 10px;
+    }
+    .service-img{
+        width: 100%;
+    }
+    
+    .servise-text-content {
+    padding: 0;
+}
+    
+    .header-laser{
+        margin: 0 0 10px 0;
+    }
+    
+    .text-laser {
+    font-size: 14px;
+}
+    .service-bottom {
+    margin-bottom: 45px;
+}
+    
+}
+
+@media screen and (max-width:991px){
+    .header-laser{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .text-laser {
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 732px){
+    .our-services-content-mobile {
+    display: block;
+    list-style: none;
+        padding: 0;
+    
+}
+    
+    .our-services-content-mobile li a {
+        display: block;
+    text-align: center;
+    text-decoration: none;
+    font: 22px "Khula", sans-serif;
+    padding: 8px 11px 5px 11px;
+    color: #ababab;
+}
+    
+    .our-services{
+        display: none;
+    }
+    
+     .our-services-content-mobile li{  
+  border: 1px solid #ababab;
+  margin:5px 100px;
+}
+
+}
+
+@media screen and (max-width: 412px){
+    .our-services-content-mobile li {   
+    margin: 5px 30px;
+}
+}
+
+
+
+
+
+
+/*----------Products We Carry -------------------*/
+.left-line, .header-products, .right-line{
+  display: inline-block;
+    position: relative;;
+}
+
+.left-line, .right-line{
+  top:-10px;
+  border-bottom: 1px solid #c4c4c4;
+  width: 31.8%;
+}
+
+.right-line{
+right:0;
+}
+
+.products{
+  margin: 0 20px;
+  font: 50px "Khula Regular", sans-serif;
+  line-height: 50px;
+}
+
+.poducts-slider{
+  padding: 15px 0;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 45px;
+}
+
+.poducts-size-slide img{
+        margin:0 10px;
+    }   
+/*------------------------*/
+
+@media screen and (max-width: 1199px){
+.products {
+    margin: 0 13px;
+    font-size: 40px;
+    line-height: 40px;
+}
+}
+    
+    @media screen and (max-width: 1024px){
+ .products {
+    margin: 0 10px;
+    font-size: 30px;
+    line-height: 40px;    
+}
+        
+ .left-line, .right-line {   
+    width: 30.4%;
+}    
+    
+        .poducts-size-slide img{
+            height: 120px;
+            width: auto;
+        }
+        
+}
+
+@media screen and (max-width:991px){
+    .products{
+        font-size: 30px;
+    }
+    .left-line, .right-line { 
+        width: 30.8%;
+    }
+    
+    .poducts-size-slide img{
+        margin:0 10px;
+    }     
+   
+}
+
+@media screen and (max-width:768px){
+    .left-line, .right-line {
+    width: 30.4%;
+}
+}
+
+@media screen and (max-width:732px){
+.left-line, .right-line {
+    width: 28.5%;
+}
+}
+
+@media screen and (max-width:412px){
+  .left-line, .right-line {
+    width: 13%;
+} 
+    
+    .poducts-size-slide img{
+        height: 100px;
+        width:auto;
+    }   
+}
+
+
+
+/*-------PRODUCT SLIDER--------*/ 
+
+.poducts-size-slide{
+    margin: 0 10px;
+}
+/*------------------------*/
+
+
+
+
+/*---------------Client Part--------------*/
+
+#client-part{
+  background: url("img/clien-say.jpg") no-repeat;
+background-size:100% 888px;
+}
+
+
+.carousel{
+  margin: 182px 0;
+}
+
+.client-header{
+  font:50px "Khula",sans-serif;
+  color:#0dc4c6;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.client-text{
+  font:27px "Khula", sans-serif;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.jason-statham{
+  font:42px "Khula-ExtraBold", sans-serif;
+  text-align: center;
+  line-height: 42px;
+  margin: 30px 0 50px 0;
+
+  color: #0dc4c6;
+}
+
+.carousel-indicators li{
+  background-color: #000000 !important;
+  border-color: transparent !important;
+  margin: 0 5px !important;
+}
+
+.carousel-indicators .active{
+  background-color: #0dc4c6 !important;
+  border-color: transparent !important;
+}
+
+/*--------------------------------*/
+@media screen and (min-width: 1600px){
+    #client-part {
+      background-size: 100% auto;
+}     
+    .carousel {
+    margin: 250px 0;
+}
+}
+
+
+
+@media screen and (max-width: 1199px){
+    .carousel {
+    margin: 50px 0;
+}
+    .client-header {
+        font-size: 40px;}
+    
+   
+}
+
+@media screen and (max-width: 1024px){
+  #client-part {
+    background: url(img/clien-say.jpg) no-repeat;
+    background-size: 100% auto;
+} 
+    
+    .carousel {
+    margin: 20px 0 0 0;
+}
+    
+    .client-header {    
+    line-height: 40px;
+}
+    .jason-statham{
+      margin-bottom: 30px;  
+    }
+    .carousel-indicators {
+    bottom: 10px;
+}
+}
+
+
+@media screen and (max-width:991px){
+    .carousel {
+    margin:0;
+}
+    .client-header{
+        line-height: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .jason-statham{
+        margin: 20px 0 40px 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    #client-part {    
+    background-size: cover;
+}
+}
+
+
+
+/*-----------Footer---------------*/
+.social-links a{
+  display: inline-block;
+background: url("img/social.png");
+height:36px;
+width:33px;
+}
+
+.social-links .fc{
+  background-position:0 0;
+}
+
+.social-links .tv{
+  background-position:-38px 0;
+}
+
+.social-links .gl{
+  background-position:-90px 0;
+}
+
+.social-links .yt{
+  background-position:-140px 0;
+}
+
+.social-links .sm{
+  background-position:-185px 0;
+}
+
+.tv, .gl, .yt{
+  margin: 0 10px;
+}
+
+.footer-about-us,.location,  .our-services-footer, .our-facebook{
+  margin: 40px 0 20px 0;
+}
+
+.contact-info, .social, .we-are-open, .our-services-footer, .our-facebook {
+  margin-bottom: 20px;
+}
+
+.footer-about-us h6, .contact-info h6, .social h6, .location h6, .we-are-open h6,
+.join h6, .our-services-footer h6, .our-facebook h6{
+  font:22px "Khula-Semibold", sans-serif;
+  color:#0dc4c6;
+  line-height: 22px;
+  margin: 0 0 15px 0;
+}
+
+.footer-about-us p,  .contact-info p, .location p, .we-are-open p, .join p{
+    font:16px "Khula", sans-serif;
+}
+
+.direction{
+  background: #0dc4c6;
+  font:16px "Khula-Semibold", sans-serif;
+  margin-top: 10px;
+  padding:10px 20px 7px 20px;
+  line-height: 16px;
+  border: none;
+  color: #ffffff;
+}
+
+.email-address{
+  background: #ffffff;
+  border: 1px solid #0dc4c6;
+  font: 15px "Khula", sans-serif;
+  line-height: 15px;
+  padding:10px 50px 7px 20px;
+}
+
+.email-address:hover{
+  background: #ffffff url("img/icon.png") no-repeat right 10px center;
+}
+
+.our-services-footer span p, .our-services-footer p span   {
+  text-transform: uppercase;
+  background:#f7f7f7;
+}
+
+.our-services-footer p{
+  line-height: 32px;
+}
+/*------------------------*/
+@media screen and (max-width:1199px){
+    .tv, .gl, .yt{
+  margin: 0 3px;
+}
+    
+    .direction {
+    font: 14px "Khula-Semibold", sans-serif;
+    padding: 10px 5px 7px 5px; 
+}
+    
+}
+
+@media screen and (max-width:1199px){
+    .our-facebook a img{
+        width:95%;
+    }
+    
+     .email-address{
+        width:100%;
+       padding: 10px 30px 7px 5px;
+        font-size: 14px;
+}
+    
+    .email-address:hover{
+  background: #ffffff url("img/icon.png") no-repeat right 5px center;
+}
+}
+
+@media screen and (max-width:991px){
+    .our-facebook a img{
+        width:100%;
+    }
+    
+    .direction {
+   width: 100%;
+    font-size: 14px;
+    margin-top: 0px;
+    padding: 10px 5px 7px 5px;   
+}
+    
+    .email-address{
+        width:100%;
+       padding: 10px 30px 7px 5px;
+        font-size: 14px;
+}
+    
+    .email-address:hover{
+  background: #ffffff url("img/icon.png") no-repeat right 5px center;
+}
+ 
+    }
+
+
+@media screen and (max-width:732px){
+    .footer-about-us, .location, .our-services-footer, .our-facebook, 
+    .contact-info, .social, .we-are-open, .join {
+    display: block;
+        text-align: center;
+}
+    
+    .our-facebook a img {
+    width: 50%;
+}
+    .direction, .email-address {   
+    width: 50%;
+    
+}
+   
+}    
+    
+
+
+
+
+
+/*--Copyright--*/
+
+.copyright{
+  
+  padding: 25px 0;
+  background: #efefef;
+}
+
+.copyright p{
+  font:16px "Ubuntu-Regular", sans-serif;
+    line-height: 16px;
+    margin: 0;
+}
+
+@media screen and (max-width:412px){
+    .copyright p {
+    font-size: 12px;
+}
+}
+/*------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
